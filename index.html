@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío - Ecuaciones y Teoremas</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo del sitio" class="logo">
+            <h1>Desafío2 continuidad</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#teorema">Teorema</a></li>
+                <li><a href="#demostracion">Demostración</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#documento">Documento</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="desafio">
+            <h2>Desafío</h2>
+            <div class="image-container">
+                <img src="img/pizarra.jpeg" alt="Imagen de pizarra con ecuaciones" style="align-items: center;" />
+            </div>
+        </section>
+
+        <!-- Teorema -->
+        <section id="teorema">
+            <h2>Comportamiento de Funciones Continuas alrededor de un Punto</h2>
+            <p>
+                Este documento trata de una propiedad importante de las funciones continuas, que son aquellas que cambian de forma suave y sin interrupciones. El tema central es cómo el valor de una función en un punto específico influye en los valores cercanos a ese punto. En particular, el teorema aborda la situación en la que una función es positiva en un punto y muestra que esta positividad también se mantiene en los puntos próximos.
+            </p>
+            <p>
+                La idea es simple: si en un punto la función da un valor mayor que cero, entonces alrededor de ese punto, en un intervalo pequeño, la función también será positiva. La continuidad de la función garantiza que no habrá cambios bruscos en sus valores, de modo que los puntos cercanos tendrán valores similares. Esto es útil, ya que asegura que la función se comporta de manera predecible y conserva su signo en el entorno inmediato.
+            </p>
+            <p>  
+                Para demostrarlo, el teorema emplea una propiedad fundamental de las funciones continuas. Esta propiedad establece que, dado cualquier valor en el que queramos que la función se mantenga cercana, podemos encontrar un intervalo alrededor del punto donde esto suceda. Así, si la función es positiva en un punto, podemos asegurarnos de que permanezca positiva en los puntos cercanos a él.
+            </p>   
+            <p>
+                En resumen, el teorema nos da una herramienta para entender y prever el comportamiento de una función continua en torno a un punto específico. Si sabemos que la función es positiva o negativa en un punto, esta información nos permite decir que, en un intervalo alrededor de dicho punto, la función seguirá siendo positiva o negativa.
+            </p>
+        </section>
+
+        <!-- Demostración -->
+        <section id="demostracion">
+            <h2>Demostración</h2>
+            <p>
+                Considérese el caso \( f(a) > 0 \), puesto que \( f \) es continua en \( a \), si \( \epsilon > 0 \) existe un \( \delta > 0 \) tal que, para todo \( x \), si \( |x− a| < \delta \), entonces \( |f(x)− f(a)| < \epsilon \).
+            </p>
+            <p>
+                Puesto que \( f(a) > 0 \), podemos tomar a \( f(a) \) como \( \epsilon \). Así, pues, existe \( \delta > 0 \) tal que para todo \( x \), si \( |x− a| < \delta \), entonces \( |f(x)− f(a)| < f(a) \), y esta última igualdad implica \( f(x) > 0 \). Puede darse una demostración análoga en el caso \( f(a) < 0 \); tómese \( \epsilon = −f(a) \). O también se puede aplicar el primer caso a la función \( −f \).
+            </p>
+        </section>
+
+        <!-- Galería -->
+        <section id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria">
+                <img src="img/lim1.png" alt="Imagen 1">
+                <img src="img/lim2.png" alt="Imagen 2">
+                <img src="img/lim3.png" alt="Imagen 3">
+                <img src="img/lim5.jpg" alt="Imagen 4">
+                <img src="img/lim6.png" alt="Imagen 5">
+                <img src="img/lim7.png" alt="Imagen 6">
+               
+            </div>
+        </section>
+
+        <!-- Embed PDF -->
+        <section id="documento">
+            <h2>Documento PDF</h2>
+            <div class="pdf-container"> <!-- Contenedor para centrar -->
+                <embed src="pdf/pdf1.pdf" type="application/pdf" width="60%" height="500px" />
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <p>Email: contacto@miweb.com</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Dirección: Calle Falsa 123, Ciudad</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Vladimir Huarachi</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

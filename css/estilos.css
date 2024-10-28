@@ -1,0 +1,116 @@
+body {
+    
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto al cuerpo del documento */
+    margin: 5;
+    padding: 4;
+    line-height: 1.6;
+    background-color: #11505533;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif; /* Aplica Lora a los encabezados */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100px; /* Ajusta el tamaño del logo */
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las imágenes se ajusten en varias filas */
+    justify-content: space-between; /* Espacio entre las imágenes */
+    gap: 20px; /* Espacio entre los cuadros */
+    margin: 0 auto; /* Centrar la galería */
+}
+
+.galeria img {
+    width: 100%; /* Hacer que las imágenes ocupen todo el ancho del cuadro */
+    height: auto; /* Mantener la proporción de las imágenes */
+    border: 2px solid #333; /* Marco alrededor de las imágenes */
+    border-radius: 8px; /* Esquinas redondeadas para un efecto más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.galeria img {
+    flex: 1 1 calc(30% - 20px); /* Ajustar el tamaño de las imágenes para que se alineen en 3 columnas */
+    max-width: calc(30% - 20px); /* Asegurarse de que las imágenes no excedan el tamaño */
+}
+
+@media (max-width: 768px) {
+    .galeria img {
+        flex: 1 1 calc(45% - 20px); /* En pantallas más pequeñas, se alinean en 2 columnas */
+        max-width: calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria img {
+        flex: 1 1 100%; /* En pantallas muy pequeñas, ocupan todo el ancho */
+        max-width: 100%;
+    }
+}
+
+.image-container {
+    display: flex; /* Usar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente (si es necesario) */
+    margin: 20px 0; /* Añadir márgenes opcionales */
+}
+
+.contacto, .social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: #fff;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.pdf-container {
+    display: flex;                /* Utiliza Flexbox para centrar */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente si hay espacio */
+    margin: 20px 0;              /* Añade margen superior e inferior si lo deseas */
+}
+
